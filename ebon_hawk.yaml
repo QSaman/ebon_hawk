@@ -18,3 +18,5 @@ streams:
        '':
          - user/themes/ebon_hawk
          - user/themes/quark
+custom_logo:
+     - name: saman-logo-white90.png
