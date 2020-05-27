@@ -1,0 +1,38 @@
+.modular-features {
+  &.small {
+    .project-image {
+      display: block;
+      justify-content: left;
+      img {
+        position: relative;
+        display: inherit;
+        font-size: 70px;
+        margin: 0 auto 1rem;
+        transform: none;
+        left: auto;
+        top: auto;
+        color: $gray-color;
+        @extend .default-animation;
+      }
+      h6 {
+        text-transform: none;
+      }
+    }
+  }
+    .project-content {
+      color: $gray-color-dark;
+    }
+    .column {
+      &:hover {
+        .project-image {
+          color: $gray-color;
+        }
+        h6 {
+          color: $primary-color;
+        }
+        .project-content {
+          color: $gray-color-dark;
+        }
+      }
+    }
+  }
