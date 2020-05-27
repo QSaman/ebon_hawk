@@ -1,9 +1,10 @@
 .modular-features {
   &.small {
     .project-image {
-      display: block;
+      display: flex;
       box-shadow: 0.3rem 0.3rem 1rem;
       transition: box-shadow 0.25s;
+      height: 100%;
       justify-content: left;
       img {
         position: relative;
@@ -28,6 +29,7 @@
       &:hover {
         .project-image {
           color: $gray-color;
+          box-shadow: 0.9rem 0.9rem 1rem;
         }
         h6 {
           color: $primary-color;
