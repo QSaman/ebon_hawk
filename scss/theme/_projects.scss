@@ -2,6 +2,8 @@
   &.small {
     .project-image {
       display: block;
+      box-shadow: 0.3rem 0.3rem 1rem;
+      transition: box-shadow 0.25s;
       justify-content: left;
       img {
         position: relative;

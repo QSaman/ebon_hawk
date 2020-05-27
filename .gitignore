@@ -1,2 +1,4 @@
 .directory
 *.swp
+*.lock
+node_modules
