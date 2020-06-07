@@ -1,3 +1,5 @@
+{% set ul_class = tree ? 'tree' : 'langswitcher' %}
+<ul class="{{ ul_class }}">
 {% for language in langswitcher.languages %}
 
     {% set show_language = true %}
@@ -26,3 +28,4 @@
     {% endif %}
 
 {% endfor %}
+</ul>
