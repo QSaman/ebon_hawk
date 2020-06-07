@@ -35,7 +35,9 @@
 
                 <div class="bricklayer">
                 {% for child in collection %}
-                    {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
+                    {% if child.language == grav.language.getLanguage() %}
+                        {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
+                    {% endif %}
                 {% endfor %}
                 </div>
 
