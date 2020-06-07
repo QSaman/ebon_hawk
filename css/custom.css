@@ -1,0 +1,15 @@
+.language-selector>.btn:first-child {
+  background: rgba(0,0,0,.05);
+}
+
+.language-selector .dropdown-menu {
+  background-color: rgba(0,0,0,.4);
+}
+
+.language-selector .dropdown-menu li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.language-selector .btn .fa-caret-down {
+  color: #fff;
+}
