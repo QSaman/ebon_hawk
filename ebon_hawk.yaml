@@ -20,3 +20,5 @@ streams:
          - user/themes/quark
 custom_logo:
      - name: saman-logo-white90.png
+custom_logo_mobile:
+     - name: saman-logo-white90.png
