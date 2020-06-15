@@ -1,5 +1,18 @@
+.rtl
+{
+  .language-selector {
+    float: left;
+  }
+}
+
+.ltr
+{
+  .language-selector {
+    float: right;
+  }
+}
+
 .language-selector {
-  float: right;
   position: relative;
   top: 50%;
   vertical-align: middle;
