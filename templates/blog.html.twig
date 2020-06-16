@@ -1,4 +1,5 @@
-{% extends 'partials/base.html.twig' %}
+{% set lang_dir = grav.language.getDefault() == grav.language.getLanguage() ? '' : '/' ~ grav.language.getLanguage()  %}
+{% extends 'partials' ~ lang_dir ~ '/base.html.twig' %}
 {% set blog_image = page.media[page.header.hero_image] ?: page.media.images|first %}
 {% set collection = page.collection() %}
 {% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
@@ -35,9 +36,7 @@
 
                 <div class="bricklayer">
                 {% for child in collection %}
-                    {% if child.language == grav.language.getLanguage() %}
-                        {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
-                    {% endif %}
+                    {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
                 {% endfor %}
                 </div>
 
