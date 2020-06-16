@@ -3,7 +3,9 @@
 {% set compress = theme_var('production-mode') ? '.min.css' : '.css' %}
 {% use 'blocks/base.html.twig' %}
 <!DOCTYPE html>
-<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+{% set is_language_persian = grav.language.getLanguage() == 'fa' %}
+{% set dir_attribute = is_language_persian ? 'dir="rtl"' : '' %}
+<html {{ dir_attribute }} lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
 {% block head deferred %}
     <meta charset="utf-8" />
@@ -18,7 +20,12 @@
 {% endblock head %}
 
 {% block stylesheets %}
-    {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
+    {% if is_language_persian %}
+        {% do assets.addCss('theme://css/persian_fonts.css') %}
+        {% do assets.addCss('theme://css-compiled/spectre-persian'~compress) %}
+    {% else %}
+        {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
+    {% endif %}
     {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
     {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
     {% do assets.addCss('theme://css-compiled/theme'~compress) %}
