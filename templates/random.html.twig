@@ -1,0 +1,3 @@
+{% set selected = random(page.collection()) %}
+
+{{ redirect_me(selected.url, 301) }}
