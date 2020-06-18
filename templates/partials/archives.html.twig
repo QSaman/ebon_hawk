@@ -3,7 +3,13 @@
 {% for month,items in archives_data %}
     {% set filtered_items = [] %}
     {% for item in items %}
-        {% if item.language == grav.language.getLanguage() %}
+        {% set has_valid_category = false %}
+        {% for category in item.taxonomy.category if not has_valid_category %}
+            {% if category == grav.language.getLanguage() ~ '_blog' %}
+                {% set has_valid_category = true %}
+            {% endif %}
+        {% endfor %}
+        {% if item.language == grav.language.getLanguage() and has_valid_category == true %}
             {% set filtered_items = filtered_items|merge([item]) %}
         {% endif %}
     {% endfor %}
