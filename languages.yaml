@@ -1,6 +1,9 @@
 en:
   THEME_EBON_HAWK:
     CUSTOM_LOGO_TEXT: Saman Saadi      
+    TITLE: Saman Saadi
+    NAME: Saman Saddi
+    AUTHOR: Saman Saadi
   THEME_QUARK:
     BLOG:
       ITEM:
@@ -292,6 +295,9 @@ zh:
 fa:
   THEME_EBON_HAWK:
     CUSTOM_LOGO_TEXT: سامان سعدی
+    TITLE: سامان سعدی
+    NAME: سامان سعدی
+    AUTHOR: سامان سعدی
   THEME_QUARK:
     BLOG:
       ITEM:
