@@ -1,4 +1,6 @@
 en:
+  THEME_EBON_HAWK:
+    CUSTOM_LOGO_TEXT: Saman Saadi      
   THEME_QUARK:
     BLOG:
       ITEM:
@@ -288,6 +290,8 @@ zh:
         HEADLINE: 订阅流
 
 fa:
+  THEME_EBON_HAWK:
+    CUSTOM_LOGO_TEXT: سامان سعدی
   THEME_QUARK:
     BLOG:
       ITEM:

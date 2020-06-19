@@ -19,6 +19,6 @@ streams:
          - user/themes/ebon_hawk
          - user/themes/quark
 custom_logo:
-     - name: saman-logo-white90.png
+     - name: saman-logo.png
 custom_logo_mobile:
-     - name: saman-logo-white90.png
+     - name: saman-logo.png
