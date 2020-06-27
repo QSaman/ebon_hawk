@@ -1,0 +1,22 @@
+.mobile-menu {
+  [dir=ltr] & {
+    left: auto;
+    right: 0;
+  }
+  
+  [dir=rtl] & {
+    left: 0;
+    right: auto;
+  }
+  .button_container {
+    [dir=ltr] & {
+      left: auto;
+      right: $horiz-padding;
+    }
+    
+    [dir=rtl] & {
+      left: $horiz-padding;
+      right: auto;
+    }
+  }
+}
