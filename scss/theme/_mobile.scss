@@ -20,3 +20,26 @@
     }
   }
 }
+
+.overlay-menu {
+  & > .tree {
+    [dir=ltr] & {
+    text-align: left;
+    }
+    
+    [dir=rtl] & {
+      text-align: right;
+    }
+  }
+}
+
+.treemenu {
+  .toggler {
+    [dir=ltr] & {
+      float: left;
+    }
+    [dir=rtl] & {
+      float: right;
+    }
+  }
+}
