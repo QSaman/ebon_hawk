@@ -43,3 +43,17 @@
     }
   }
 }
+
+.mobile-logo {
+  svg, img {
+    [dir=ltr] & {
+      margin-left: 1.4rem;
+      margin-right: auto;
+    }
+    
+    [dir=rtl] & {
+      margin-left: auto;
+      margin-right: 1.4rem;
+    }
+  }
+}
