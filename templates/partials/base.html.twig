@@ -4,8 +4,8 @@
 {% use 'blocks/base.html.twig' %}
 <!DOCTYPE html>
 {% set is_language_persian = grav.language.getLanguage() == 'fa' %}
-{% set dir_attribute = is_language_persian ? 'dir="rtl"' : '' %}
-<html {{ dir_attribute }} lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+{% set dir_attribute = is_language_persian ? 'rtl' : 'ltr' %}
+<html dir="{{ dir_attribute }}" lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
 {% block head deferred %}
     <meta charset="utf-8" />
